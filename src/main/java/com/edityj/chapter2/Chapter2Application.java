@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @SpringBootApplication
 @MapperScan(
-        basePackages = "com.edityj.chapter2.mapper.*",
+        basePackages = "com.edityj.chapter2.mapper",
         sqlSessionFactoryRef = "sqlSessionFactory",
         sqlSessionTemplateRef = "sqlSessionTemplate",
         annotationClass = Repository.class

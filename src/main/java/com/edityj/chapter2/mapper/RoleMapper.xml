@@ -6,4 +6,7 @@
     <select id="getRole" parameterType="long" resultType="role">
         select * from role where id = #{id}
     </select>
+    <insert id="insertRole" useGeneratedKeys="true" keyProperty="id">
+        insert into role(username, password, sex, name) value (#{username}, #{password}, #{sex}, #{name})
+    </insert>
 </mapper>

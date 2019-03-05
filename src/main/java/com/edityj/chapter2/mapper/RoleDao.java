@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface RoleDao {
     Role getRole(Long id);
+    int insertRole(Role role);
 }
