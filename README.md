@@ -1,4 +1,4 @@
-#### 一些常用注释
+### 一些常用注释
 
 1. **@PropertySource**：指定配置文件的路径，用来加载额外的配置文件，通过设置*ignoreResourceNotFound*属性来指定是否忽略文件为空的情况，例子:
 
@@ -49,6 +49,16 @@ public class ScopeBean {
 }
 ```
 
-4. **@Profile**：用来指定对应的开发环境中对应的配置。实际操作中我们还可以运用*properties*文件来进行生产环境的指定，在java运行环境中指定参数***-Dspring.profile.active={profile}***。
+4. **@Profile**：用来指定对应的开发环境中对应的配置。实际操作中我们还可以运用*properties*文件来进行生产环境的指定，在java运行环境中指定参数  ***-Dspring.profile.active={profile}*** 。
 
 5. 
+
+
+
+### 一些异常
+1. ***You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.***
+>参考资料： https://www.cnblogs.com/mao2080/p/9451612.html 
+
+    解决方法： 
+
+    在连接字符串后面加上?serverTimezone=UTC，其中UTC是统一标准世界时间。
