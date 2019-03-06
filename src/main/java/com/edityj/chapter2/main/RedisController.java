@@ -230,4 +230,33 @@ public class RedisController {
         map.put("success", true);
         return map;
     }
+
+
+    /**
+     * 使用redis的事务机制
+     */
+    @RequestMapping("/multi")
+    @ResponseBody
+    public Map<String, Object> testMulti(){
+//        redisTemplate.opsForValue().set("key1", "value1");
+//        List list = (List)redisTemplate.execute((RedisOperations<String, String> operations) -> {
+//            //设置要监控的key1
+//            operations.watch("key1");
+//            // 开启事务，在exec命令执行前， 全部都只是进入队列
+//            operations.multi();
+//            operations.opsForValue().set("key2","value2");
+////            operations.opsForValue().increment("key1",1);
+//            // 获取值将为null，因为redis只是把命令放入队列
+//            Object value2 = operations.opsForValue().get("key2");
+//            System.out.println("命令在队列，所以value为null【"+ value2 +"】");
+//           return operations.exec();
+//        });
+//
+//        System.out.println(list);
+
+
+        Map<String, Object> map = new HashMap<>();
+        map.put("success", true);
+        return map;
+    }
 }
