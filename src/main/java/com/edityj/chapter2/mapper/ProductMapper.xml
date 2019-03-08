@@ -8,12 +8,12 @@
     -->
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="sub_title" jdbcType="VARCHAR" property="sub_title" />
-    <result column="original_price" jdbcType="REAL" property="original_price" />
-    <result column="promote_price" jdbcType="REAL" property="promote_price" />
+    <result column="sub_title" jdbcType="VARCHAR" property="subTitle" />
+    <result column="original_price" jdbcType="REAL" property="originalPrice" />
+    <result column="promote_price" jdbcType="REAL" property="promotePrice" />
     <result column="stock" jdbcType="INTEGER" property="stock" />
-    <result column="category_id" jdbcType="INTEGER" property="category_id" />
-    <result column="create_date" jdbcType="TIMESTAMP" property="create_date" />
+    <result column="category_id" jdbcType="INTEGER" property="categoryId" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--
@@ -100,9 +100,9 @@
     insert into yj_product (name, sub_title, original_price, 
       promote_price, stock, category_id, 
       create_date)
-    values (#{name,jdbcType=VARCHAR}, #{sub_title,jdbcType=VARCHAR}, #{original_price,jdbcType=REAL}, 
-      #{promote_price,jdbcType=REAL}, #{stock,jdbcType=INTEGER}, #{category_id,jdbcType=INTEGER}, 
-      #{create_date,jdbcType=TIMESTAMP})
+    values (#{name,jdbcType=VARCHAR}, #{subTitle,jdbcType=VARCHAR}, #{originalPrice,jdbcType=REAL}, 
+      #{promotePrice,jdbcType=REAL}, #{stock,jdbcType=INTEGER}, #{categoryId,jdbcType=INTEGER}, 
+      #{createDate,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.edityj.chapter2.pojo.Product" useGeneratedKeys="true">
     <!--
@@ -114,22 +114,22 @@
       <if test="name != null">
         name,
       </if>
-      <if test="sub_title != null">
+      <if test="subTitle != null">
         sub_title,
       </if>
-      <if test="original_price != null">
+      <if test="originalPrice != null">
         original_price,
       </if>
-      <if test="promote_price != null">
+      <if test="promotePrice != null">
         promote_price,
       </if>
       <if test="stock != null">
         stock,
       </if>
-      <if test="category_id != null">
+      <if test="categoryId != null">
         category_id,
       </if>
-      <if test="create_date != null">
+      <if test="createDate != null">
         create_date,
       </if>
     </trim>
@@ -137,23 +137,23 @@
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
       </if>
-      <if test="sub_title != null">
-        #{sub_title,jdbcType=VARCHAR},
+      <if test="subTitle != null">
+        #{subTitle,jdbcType=VARCHAR},
       </if>
-      <if test="original_price != null">
-        #{original_price,jdbcType=REAL},
+      <if test="originalPrice != null">
+        #{originalPrice,jdbcType=REAL},
       </if>
-      <if test="promote_price != null">
-        #{promote_price,jdbcType=REAL},
+      <if test="promotePrice != null">
+        #{promotePrice,jdbcType=REAL},
       </if>
       <if test="stock != null">
         #{stock,jdbcType=INTEGER},
       </if>
-      <if test="category_id != null">
-        #{category_id,jdbcType=INTEGER},
+      <if test="categoryId != null">
+        #{categoryId,jdbcType=INTEGER},
       </if>
-      <if test="create_date != null">
-        #{create_date,jdbcType=TIMESTAMP},
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -167,23 +167,23 @@
       <if test="name != null">
         name = #{name,jdbcType=VARCHAR},
       </if>
-      <if test="sub_title != null">
-        sub_title = #{sub_title,jdbcType=VARCHAR},
+      <if test="subTitle != null">
+        sub_title = #{subTitle,jdbcType=VARCHAR},
       </if>
-      <if test="original_price != null">
-        original_price = #{original_price,jdbcType=REAL},
+      <if test="originalPrice != null">
+        original_price = #{originalPrice,jdbcType=REAL},
       </if>
-      <if test="promote_price != null">
-        promote_price = #{promote_price,jdbcType=REAL},
+      <if test="promotePrice != null">
+        promote_price = #{promotePrice,jdbcType=REAL},
       </if>
       <if test="stock != null">
         stock = #{stock,jdbcType=INTEGER},
       </if>
-      <if test="category_id != null">
-        category_id = #{category_id,jdbcType=INTEGER},
+      <if test="categoryId != null">
+        category_id = #{categoryId,jdbcType=INTEGER},
       </if>
-      <if test="create_date != null">
-        create_date = #{create_date,jdbcType=TIMESTAMP},
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
@@ -195,12 +195,12 @@
     -->
     update yj_product
     set name = #{name,jdbcType=VARCHAR},
-      sub_title = #{sub_title,jdbcType=VARCHAR},
-      original_price = #{original_price,jdbcType=REAL},
-      promote_price = #{promote_price,jdbcType=REAL},
+      sub_title = #{subTitle,jdbcType=VARCHAR},
+      original_price = #{originalPrice,jdbcType=REAL},
+      promote_price = #{promotePrice,jdbcType=REAL},
       stock = #{stock,jdbcType=INTEGER},
-      category_id = #{category_id,jdbcType=INTEGER},
-      create_date = #{create_date,jdbcType=TIMESTAMP}
+      category_id = #{categoryId,jdbcType=INTEGER},
+      create_date = #{createDate,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

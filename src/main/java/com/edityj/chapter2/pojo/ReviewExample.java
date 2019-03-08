@@ -255,123 +255,123 @@ public class ReviewExample {
             return (Criteria) this;
         }
 
-        public Criteria andUser_idIsNull() {
+        public Criteria andUserIdIsNull() {
             addCriterion("user_id is null");
             return (Criteria) this;
         }
 
-        public Criteria andUser_idIsNotNull() {
+        public Criteria andUserIdIsNotNull() {
             addCriterion("user_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andUser_idEqualTo(Integer value) {
-            addCriterion("user_id =", value, "user_id");
+        public Criteria andUserIdEqualTo(Integer value) {
+            addCriterion("user_id =", value, "userId");
             return (Criteria) this;
         }
 
-        public Criteria andUser_idNotEqualTo(Integer value) {
-            addCriterion("user_id <>", value, "user_id");
+        public Criteria andUserIdNotEqualTo(Integer value) {
+            addCriterion("user_id <>", value, "userId");
             return (Criteria) this;
         }
 
-        public Criteria andUser_idGreaterThan(Integer value) {
-            addCriterion("user_id >", value, "user_id");
+        public Criteria andUserIdGreaterThan(Integer value) {
+            addCriterion("user_id >", value, "userId");
             return (Criteria) this;
         }
 
-        public Criteria andUser_idGreaterThanOrEqualTo(Integer value) {
-            addCriterion("user_id >=", value, "user_id");
+        public Criteria andUserIdGreaterThanOrEqualTo(Integer value) {
+            addCriterion("user_id >=", value, "userId");
             return (Criteria) this;
         }
 
-        public Criteria andUser_idLessThan(Integer value) {
-            addCriterion("user_id <", value, "user_id");
+        public Criteria andUserIdLessThan(Integer value) {
+            addCriterion("user_id <", value, "userId");
             return (Criteria) this;
         }
 
-        public Criteria andUser_idLessThanOrEqualTo(Integer value) {
-            addCriterion("user_id <=", value, "user_id");
+        public Criteria andUserIdLessThanOrEqualTo(Integer value) {
+            addCriterion("user_id <=", value, "userId");
             return (Criteria) this;
         }
 
-        public Criteria andUser_idIn(List<Integer> values) {
-            addCriterion("user_id in", values, "user_id");
+        public Criteria andUserIdIn(List<Integer> values) {
+            addCriterion("user_id in", values, "userId");
             return (Criteria) this;
         }
 
-        public Criteria andUser_idNotIn(List<Integer> values) {
-            addCriterion("user_id not in", values, "user_id");
+        public Criteria andUserIdNotIn(List<Integer> values) {
+            addCriterion("user_id not in", values, "userId");
             return (Criteria) this;
         }
 
-        public Criteria andUser_idBetween(Integer value1, Integer value2) {
-            addCriterion("user_id between", value1, value2, "user_id");
+        public Criteria andUserIdBetween(Integer value1, Integer value2) {
+            addCriterion("user_id between", value1, value2, "userId");
             return (Criteria) this;
         }
 
-        public Criteria andUser_idNotBetween(Integer value1, Integer value2) {
-            addCriterion("user_id not between", value1, value2, "user_id");
+        public Criteria andUserIdNotBetween(Integer value1, Integer value2) {
+            addCriterion("user_id not between", value1, value2, "userId");
             return (Criteria) this;
         }
 
-        public Criteria andProduct_idIsNull() {
+        public Criteria andProductIdIsNull() {
             addCriterion("product_id is null");
             return (Criteria) this;
         }
 
-        public Criteria andProduct_idIsNotNull() {
+        public Criteria andProductIdIsNotNull() {
             addCriterion("product_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andProduct_idEqualTo(Integer value) {
-            addCriterion("product_id =", value, "product_id");
+        public Criteria andProductIdEqualTo(Integer value) {
+            addCriterion("product_id =", value, "productId");
             return (Criteria) this;
         }
 
-        public Criteria andProduct_idNotEqualTo(Integer value) {
-            addCriterion("product_id <>", value, "product_id");
+        public Criteria andProductIdNotEqualTo(Integer value) {
+            addCriterion("product_id <>", value, "productId");
             return (Criteria) this;
         }
 
-        public Criteria andProduct_idGreaterThan(Integer value) {
-            addCriterion("product_id >", value, "product_id");
+        public Criteria andProductIdGreaterThan(Integer value) {
+            addCriterion("product_id >", value, "productId");
             return (Criteria) this;
         }
 
-        public Criteria andProduct_idGreaterThanOrEqualTo(Integer value) {
-            addCriterion("product_id >=", value, "product_id");
+        public Criteria andProductIdGreaterThanOrEqualTo(Integer value) {
+            addCriterion("product_id >=", value, "productId");
             return (Criteria) this;
         }
 
-        public Criteria andProduct_idLessThan(Integer value) {
-            addCriterion("product_id <", value, "product_id");
+        public Criteria andProductIdLessThan(Integer value) {
+            addCriterion("product_id <", value, "productId");
             return (Criteria) this;
         }
 
-        public Criteria andProduct_idLessThanOrEqualTo(Integer value) {
-            addCriterion("product_id <=", value, "product_id");
+        public Criteria andProductIdLessThanOrEqualTo(Integer value) {
+            addCriterion("product_id <=", value, "productId");
             return (Criteria) this;
         }
 
-        public Criteria andProduct_idIn(List<Integer> values) {
-            addCriterion("product_id in", values, "product_id");
+        public Criteria andProductIdIn(List<Integer> values) {
+            addCriterion("product_id in", values, "productId");
             return (Criteria) this;
         }
 
-        public Criteria andProduct_idNotIn(List<Integer> values) {
-            addCriterion("product_id not in", values, "product_id");
+        public Criteria andProductIdNotIn(List<Integer> values) {
+            addCriterion("product_id not in", values, "productId");
             return (Criteria) this;
         }
 
-        public Criteria andProduct_idBetween(Integer value1, Integer value2) {
-            addCriterion("product_id between", value1, value2, "product_id");
+        public Criteria andProductIdBetween(Integer value1, Integer value2) {
+            addCriterion("product_id between", value1, value2, "productId");
             return (Criteria) this;
         }
 
-        public Criteria andProduct_idNotBetween(Integer value1, Integer value2) {
-            addCriterion("product_id not between", value1, value2, "product_id");
+        public Criteria andProductIdNotBetween(Integer value1, Integer value2) {
+            addCriterion("product_id not between", value1, value2, "productId");
             return (Criteria) this;
         }
 
@@ -445,63 +445,63 @@ public class ReviewExample {
             return (Criteria) this;
         }
 
-        public Criteria andCreate_dateIsNull() {
+        public Criteria andCreateDateIsNull() {
             addCriterion("create_date is null");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_dateIsNotNull() {
+        public Criteria andCreateDateIsNotNull() {
             addCriterion("create_date is not null");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_dateEqualTo(Date value) {
-            addCriterion("create_date =", value, "create_date");
+        public Criteria andCreateDateEqualTo(Date value) {
+            addCriterion("create_date =", value, "createDate");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_dateNotEqualTo(Date value) {
-            addCriterion("create_date <>", value, "create_date");
+        public Criteria andCreateDateNotEqualTo(Date value) {
+            addCriterion("create_date <>", value, "createDate");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_dateGreaterThan(Date value) {
-            addCriterion("create_date >", value, "create_date");
+        public Criteria andCreateDateGreaterThan(Date value) {
+            addCriterion("create_date >", value, "createDate");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_dateGreaterThanOrEqualTo(Date value) {
-            addCriterion("create_date >=", value, "create_date");
+        public Criteria andCreateDateGreaterThanOrEqualTo(Date value) {
+            addCriterion("create_date >=", value, "createDate");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_dateLessThan(Date value) {
-            addCriterion("create_date <", value, "create_date");
+        public Criteria andCreateDateLessThan(Date value) {
+            addCriterion("create_date <", value, "createDate");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_dateLessThanOrEqualTo(Date value) {
-            addCriterion("create_date <=", value, "create_date");
+        public Criteria andCreateDateLessThanOrEqualTo(Date value) {
+            addCriterion("create_date <=", value, "createDate");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_dateIn(List<Date> values) {
-            addCriterion("create_date in", values, "create_date");
+        public Criteria andCreateDateIn(List<Date> values) {
+            addCriterion("create_date in", values, "createDate");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_dateNotIn(List<Date> values) {
-            addCriterion("create_date not in", values, "create_date");
+        public Criteria andCreateDateNotIn(List<Date> values) {
+            addCriterion("create_date not in", values, "createDate");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_dateBetween(Date value1, Date value2) {
-            addCriterion("create_date between", value1, value2, "create_date");
+        public Criteria andCreateDateBetween(Date value1, Date value2) {
+            addCriterion("create_date between", value1, value2, "createDate");
             return (Criteria) this;
         }
 
-        public Criteria andCreate_dateNotBetween(Date value1, Date value2) {
-            addCriterion("create_date not between", value1, value2, "create_date");
+        public Criteria andCreateDateNotBetween(Date value1, Date value2) {
+            addCriterion("create_date not between", value1, value2, "createDate");
             return (Criteria) this;
         }
     }
